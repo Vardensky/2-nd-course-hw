@@ -86,6 +86,15 @@ body {
 	position: relative;
 	max-width: 379px;
 	height: 300px;
+	transition: 0.5s ease;
+}
+
+.footer__content-item:hover {
+	border: 3px solid #44D2FF;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s ease;
+	box-shadow: 0 0 5px #ccc;
 }
 
 .item-text {
