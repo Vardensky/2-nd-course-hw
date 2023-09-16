@@ -45,4 +45,11 @@ for (let dayMonth = 1; dayMonth <= 31; dayMonth += 7) {
   console.log(`Сегодня пятница, ${dayMonth}-е число. Необходимо подготовить отчет.`);	
 }
 
+//Аналог задания №5
+let counter = 1;
+for (let number = 1000; number > 50;) {
+	number /= 2;
+	console.log(`Получилось число ${number}. Число итераций равно ${counter}`);
+	counter++;
+}
 
