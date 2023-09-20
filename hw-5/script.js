@@ -80,43 +80,50 @@ exponentiation(prompt('Введите число'));
 
 //Задание №7
 
+function getCircleArea() {
+	return this.radius ** 2 * Math.PI;
+}
+
+function getCirclePerimiter() {
+ return this.radius * 2 * Math.PI; 
+}
+
 const circle1 = {
-	radius: 4,
-	getArea() {
-		console.log(`Площадь круга через радиус равна ${this.radius ** 2 * Math.PI}`);
-	}
+	radius:4,
+	getArea: getCircleArea,
+	getPerimiter: getCirclePerimiter,
 }
 
-const circle2 = {
-	radius: 4,
-	getPerimeter() {
-		console.log(`Периметр окружности равен ${2 * Math.PI * this.radius}`);
-	}
+const circle2 = { 
+	radius:8,
+	getArea: getCircleArea,
+	getPerimiter: getCirclePerimiter,
 }
 
-circle1.getArea();
-circle2.getPerimeter();
+	console.log(`Площадь круга 1 равна ${circle1.getArea()}`);
+	console.log(`Периметр круга 1 равен ${circle1.getPerimiter()}`);
+	console.log(`Площадь круга 2 равна ${circle2.getArea()}`);
+	console.log(`Периметр круга 2 равен ${circle2.getPerimiter()}`);
 
 //Задание №8
 
-const showSeason = (a) => {
+const showSeason = () => {
+	let a = Number(prompt('Введите число от 1 до 12'));
 	if (a === 1 || a === 2 || a === 12) {
-		return 'Зима';
+		alert('Зима');
 
 	} else if (a === 3 || a === 4 || a === 5) {
-		return 'Весна';
+		alert('Весна');
 	}
 
 	else if (a === 6 || a === 7 || a === 8) {
-		return 'Лето';
+		alert('Лето');
 	}
 
 	else if (a === 9 || a === 10 || a === 11) {
-		return 'Осень';
+		alert('Осень');
 
 	} else {
-		return 'Вы ввели что-то не то';
+		alert('Вы ввели что-то не то');
 	}
 }
-
-showSeason(Number(prompt('Введите значение от 1 до 12')));
