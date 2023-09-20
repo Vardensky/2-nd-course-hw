@@ -24,20 +24,15 @@ body {
 .header__top-h1 {
   color: #FFF;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  max-width: 788px;
   padding-top: 217px;
 }
 
 .header__text {
   color: #FFF;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 32px; /* 177.778% */
-  max-width: 481px;
   margin-top: 32px;
   margin-bottom: 44px;
 }
@@ -53,7 +48,6 @@ body {
   font-size: 18px;
   font-style: inherit;
   font-weight: 400;
-  line-height: normal;
   transition: 0.8s ease;
 }
 
@@ -87,23 +81,25 @@ body {
   position: relative;
   max-width: 379px;
   transition: 0.5s ease;
+  border: 3px solid transparent;
 }
 
 .games__content-item:hover {
   border: 3px solid #44D2FF;
   border-radius: 20px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
   cursor: pointer;
   transition: 0.5s ease;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #44D2FF;
 }
 
 .item-text {
   position: absolute;
-  top: 236px;
+  bottom: 32px;
   left: 32px;
   color: #FFF;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
   line-height: 32px; /* 133.333% */
 }
@@ -130,15 +126,12 @@ body {
 .timeyear__heading {
   color: #FFF;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .timeyear__text {
   color: #FFF;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 32px; /* 177.778% */
   width: 584px;
@@ -165,21 +158,19 @@ body {
 .riddleGame__heading {
   color: #FFF;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .riddleGame__text {
   color: #FFF;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 32px; /* 177.778% */
-  max-width: 1200px;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .footer {
@@ -190,9 +181,7 @@ body {
 .footer__text {
   color: #FFF;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -250,7 +239,6 @@ body {
   .header__text {
     font-size: 14px;
     line-height: 22px; /* 157.143% */
-    max-width: 343px;
     margin-bottom: 32px;
     text-align: center;
   }
@@ -275,7 +263,6 @@ body {
     width: 343px;
     font-size: 14px;
     color: #FFF;
-    font-style: normal;
     font-weight: 300;
     line-height: 22px; /* 157.143% */
     text-align: center;
