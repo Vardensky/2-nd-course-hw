@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-	background-image: url(/hw-5/img/bg.jpg);
+	background-image: url(/img/bg.jpg);
 	background-repeat: no-repeat;
   background-position: center;
 	background-size: cover;
@@ -64,6 +64,7 @@ body {
 }
 
 .item-img {
+	display: block;
 	border-radius: 20px;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -89,8 +90,6 @@ body {
 .games__content-item:hover {
 	border: 3px solid #44D2FF;
 	border-radius: 20px;
-	border-bottom-left-radius: 26px;
-	border-bottom-right-radius: 26px;
 	cursor: pointer;
 	transition: 0.5s ease;
 	box-shadow: 0 0 5px #44D2FF;
@@ -143,7 +142,7 @@ body {
 
 .riddleGame {
 	background-color: $bgc;
-	background-image: url(/hw-5/img/gameRiddle-bg.jpg);
+	background-image: url(/img/gameRiddle-bg.jpg);
 	background-repeat: no-repeat;
   background-position: center;
 	background-size: cover;
@@ -239,7 +238,7 @@ body {
 
 @media (max-width: 767px)  {
 	.header {
-		background-image: url(/hw-5/img/bg-mobile.jpg);
+		background-image: url(/img/bg-mobile.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
