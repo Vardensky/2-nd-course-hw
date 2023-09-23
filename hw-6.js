@@ -105,10 +105,12 @@ let sqrResult = arrSqr.map(item => item**2);
 console.log(sqrResult);
 
 //Задание №12
+
 const getLengthWords = quanity => quanity.map(str => str.length);
 console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
 
 //Задание №13
+
 function filterPositive(array) {
 	return array.filter(item => item < 0)
 }
