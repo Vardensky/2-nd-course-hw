@@ -3,10 +3,9 @@
 let arrayNumbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < arrayNumbers.length; i++) {
-	if (arrayNumbers[i] >= 10) {
+	console.log(arrayNumbers[i]);
+	if (arrayNumbers[i] === 10) {
 		break;
-	} else {
-		console.log(arrayNumbers[i]);
 	}
 }
 
@@ -88,13 +87,10 @@ console.log(sortArr2.flat());
 
 //Задание №10
 
-let array = [];
-let sum = 1;
-for (let i = 1; i <= 10; i++) {
-	array.push(i);
-}
-for (let j = 1; j < array.length; j++) {
-	sum += array[j];
+let array = [1, 2, 3, 4, 5];
+let sum = 0;
+for (let i = 1; i < array.length; i++) {
+	sum = array[i] + array[i - 1];
 	console.log(sum);
 }
 
@@ -116,3 +112,23 @@ function filterPositive(array) {
 }
 filterPositive([-1, 0, 5, -10, 56]); 
 filterPositive([-25, 25, 0, -1000, -2]);
+
+//Задание №14
+function randomInteger(min, max) {
+  // случайное число от min до (max+1)
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+let randomArr = [];
+for (let i = randomInteger(1, 10); randomArr.length <= 10; i++) {
+	randomArr.push(i);
+}
+console.log(randomArr);
+
+let newArr = [];
+for (let i = 0; i < randomArr.length; i++) {
+	if (randomArr[i] % 2 === 0) {
+		console.log(newArr.push[i]);
+	} 
+}
