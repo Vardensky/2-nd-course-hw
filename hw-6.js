@@ -34,7 +34,7 @@ console.log(createArr);
 //Задание №5
 
 let addArr = [1, 1, 1];
-addArr.push(2, 2);
+addArr.push(2, 2, 2);
 console.log(addArr);
 
 //Задание №6
@@ -47,7 +47,15 @@ console.log(deleteSymb);
 //Задание №7
 
 let guessNumber = [9, 8, 7, 6, 5];
-let result = 0;
+let checkNumber = guessNumber.includes(Number(prompt('Введите число любое')));
+if (checkNumber === true) {
+	alert('угадал');
+ } else {
+	alert('НЕ угадал');
+}
+
+
+/*let result = 0;
 let enterNumber = Number(prompt('Введите число любое'));
 for (let i = 0; i < guessNumber.length; i++) {
 	if (enterNumber === guessNumber[i]) {
@@ -56,7 +64,7 @@ for (let i = 0; i < guessNumber.length; i++) {
 	} else {
 		console.log('НЕ угадал');
 	}
-}
+} */
 
 //Задание №8
 let viceVersa = 'abcdef';
@@ -86,12 +94,20 @@ let sortArr2 = [
 console.log(sortArr2.flat());
 
 //Задание №10
+function getRandomInt(max) {
+	return Math.floor(Math.random() * max);
+}
 
-let array = [1, 2, 3, 4, 5];
+let array = [];
 let sum = 0;
-for (let i = 1; i < array.length; i++) {
-	sum = array[i] + array[i - 1];
-	console.log(sum);
+for (let i = 0; i < 10; i++) {
+	array.push(getRandomInt(10));
+}
+console.log(array);
+
+for (let i = 0; i < array.length - 1; i++) {
+	const sum = array[i] + array[i + 1];
+	console.log("Сумма", array[i], "и", array[i + 1], "равна", sum);
 }
 
 //Задание №11
@@ -113,7 +129,8 @@ function filterPositive(array) {
 filterPositive([-1, 0, 5, -10, 56]); 
 filterPositive([-25, 25, 0, -1000, -2]);
 
-//Задание №14
+/*Задание №14 Еще в работе
+
 function randomInteger(min, max) {
   // случайное число от min до (max+1)
   let rand = min + Math.random() * (max + 1 - min);
@@ -127,8 +144,9 @@ for (let i = randomInteger(1, 10); randomArr.length <= 10; i++) {
 console.log(randomArr);
 
 let newArr = [];
-for (let i = 0; i < randomArr.length; i++) {
-	if (randomArr[i] % 2 === 0) {
-		console.log(newArr.push[i]);
+for (let j = 0; j < randomArr.length; j++) {
+	if (randomArr[j] % 2 === 0) {
+		newArr.push(j);
 	} 
 }
+console.log(newArr); */
