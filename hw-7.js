@@ -41,12 +41,11 @@ console.log(consoleRandomInt(1, 10));
 
 //Задание №6
 
-const consoleRandomInt = (min, max) => {
-	let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
-}
-
 const getRandomArrNumbers = (userNumber) => {
+	const consoleRandomInt = (min, max) => {
+		let rand = min + Math.random() * (max + 1 - min);
+		return Math.floor(rand);
+	}
 	let array = [];
 	for (let i = 0; array.length < Math.floor((userNumber / 2)); i++) {
 		array.push(consoleRandomInt(0, userNumber));
@@ -58,12 +57,11 @@ getRandomArrNumbers(12);
 
 //Задание №7
 
-const consoleRandomInt = (min, max) => {
-	let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
-}
-
 const twoIntNumber = (a, b) => {
+	const consoleRandomInt = (min, max) => {
+		let rand = min + Math.random() * (max + 1 - min);
+		return Math.floor(rand);
+	}
 	return consoleRandomInt(a, b);
 }
 
@@ -100,5 +98,23 @@ if (second < 10) { // если секунд будет меньше 10,
 }
 
 console.log(`Время сейчас ${hour}:${minute}:${second}`);
+
+//Задание №11
+
+function gameStart() {
+	let gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+	gameArr.sort();
+	alert(gameArr);
+	questionFristEl = prompt('Чему равнялся первый элемент массива?');
+	questionLastEl = prompt('Чему равнялся последний элемент массива?');
+
+		if (gameArr[0].toLowerCase() === questionFristEl.toLowerCase() && gameArr[6].toLowerCase() === questionLastEl.toLowerCase()) {
+			alert('Поздравляем! Возьмите с полки пирожок.');
+		} else if (gameArr[0].toLowerCase() != questionFristEl.toLowerCase() && gameArr[6].toLowerCase() != questionLastEl.toLowerCase()) {
+			alert('Всё неправильно');
+		} else {
+			alert('Вы были близки к победе!');
+		}
+}
 
 
